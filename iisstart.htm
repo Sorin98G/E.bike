@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biciclete Electrice Profesionale</title>
+  <style>
+    :root {
+      --verde: #2ecc71;
+      --verde-inchis: #27ae60;
+      --albastru: #3498db;
+      --alb: #d8d8d8;
+      --gri-deschis: rgba(58, 144, 214, 0.27);
+    }
+
+    body, html {
+      margin: 0;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      height: 100%;
+      overflow-x: hidden;
+      color: var(--alb);
+    }
+
+    /* Video background */
+    .video-bg {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: -2;
+      filter: blur(8px) brightness(0.5);
+    }
+
+    .overlay {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      z-index: -1;
+    }
+
+    header {
+      text-align: center;
+      padding: 100px 20px 50px 20px;
+      color: var(--alb);
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin: 0;
+      background: linear-gradient(90deg, var(--verde), var(--albastru));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    nav {
+      margin-top: 20px;
+    }
+
+    nav a {
+      color: var(--alb);
+      margin: 0 20px;
+      text-decoration: none;
+      font-weight: bold;
+      font-size: 1.1em;
+      transition: color 0.3s;
+    }
+
+    nav a:hover {
+      color: var(--verde);
+    }
+
+    section {
+      padding: 80px 20px;
+      background-color: rgba(0, 0, 0, 0.6);
+      margin: 20px auto;
+      max-width: 1200px;
+      border-radius: 15px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 40px;
+      background: linear-gradient(90deg, var(--verde), var(--albastru));
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 2.2em;
+    }
+
+    .produse {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+      justify-content: center;
+    }
+
+    .produs {
+      border-radius: 10px;
+      overflow: hidden;
+      width: 300px;
+      text-align: center;
+      background-color: var(--gri-deschis);
+      color: #ffffff;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.25);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .produs:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 10px 25px rgba(141, 124, 124, 0.35);
+    }
+
+    .produs img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .produs h3 {
+      margin: 15px 0 10px 0;
+      color: var(--verde-inchis);
+      font-size: 1.4em;
+    }
+
+    .produs p {
+      padding: 0 15px 15px 15px;
+      font-size: 1em;
+    }
+
+    .buton {
+      background-color: var(--albastru);
+      color: var(--alb);
+      border: none;
+      padding: 12px 25px;
+      margin-bottom: 20px;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 1em;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .buton:hover {
+      background-color: #2980b9;
+      transform: scale(1.05);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      color: var(--alb);
+      background-color: rgba(0,0,0,0.7);
+      margin-top: 50px;
+      font-size: 0.95em;
+    }
+
+    @media(max-width: 768px) {
+      .produse {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- Video background -->
+<video class="video-bg" autoplay muted loop>
+  <source src="Înregistrare 2025-08-29 231837.mp4" type="video/mp4">
+  Your browser does not support HTML5 video.
+</video>
+<div class="overlay"></div>
+
+<header>
+  <h1>Biciclete Electrice Profesionale</h1>
+  <nav>
+    <a href="#produse">Produse</a>
+    <a href="#beneficii">Beneficii</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="produse">
+  <h2>Modele de Biciclete</h2>
+  <div class="produse">
+    <div class="produs">
+      <img src="photo-1624243519828-52a0f2c88af3.jpg" alt="Bicicleta 1">
+      <h3>Model Verde</h3>
+      <p>Bicicletă electrică cu autonomie de 50 km și viteză maximă 25 km/h.</p>
+      <button class="buton">Cumpără acum</button>
+    </div>
+    <div class="produs">
+      <img src="photo-1624243519828-52a0f2c88af3.jpg" alt="Bicicleta 2">
+      <h3>Model Albastru</h3>
+      <p>Bicicletă electrică ușoară, ideală pentru oraș, autonomie 60 km.</p>
+      <button class="buton">Cumpără acum</button>
+    </div>
+    <div class="produs">
+      <img src="photo-1624243519828-52a0f2c88af3.jpg" alt="Bicicleta 3">
+      <h3>Model Premium</h3>
+      <p>Bicicletă electrică cu suspensie completă și autonomie de 80 km.</p>
+      <button class="buton">Cumpără acum</button>
+    </div>
+  </div>
+</section>
+
+<section id="beneficii">
+  <h2>De ce să alegi bicicleta noastră?</h2>
+  <ul style="max-width:800px; margin:auto; font-size:1.2em; line-height:2em; color:#ffffff;">
+    <li>Autonomie mare și baterii fiabile</li>
+    <li>Design modern și confortabil</li>
+    <li>Serviciu clienți dedicat și garanție extinsă</li>
+    <li>Ecologic și economic</li>
+  </ul>
+</section>
+
+<section id="contact">
+  <h2>Contactează-ne</h2>
+  <form action="https://formsubmit.co/sorin7940s@gmail.com" method="POST" style="max-width:600px; margin:auto; display:flex; flex-direction:column; gap:15px;">
+    <input type="text" name="name" placeholder="Nume" required style="padding:12px; border-radius:5px; border:1px solid #ccc;">
+    <input type="email" name="email" placeholder="Email" required style="padding:12px; border-radius:5px; border:1px solid #ccc;">
+    <textarea name="message" placeholder="Mesaj" rows="5" required style="padding:12px; border-radius:5px; border:1px solid #ccc;"></textarea>
+    <button type="submit" class="buton">Trimite mesaj</button>
+  </form>
+</section>
+
+<footer>
+  <p>&copy; 2025 Biciclete Electrice Profesionale. Toate drepturile rezervate.</p>
+</footer>
+
+</body>
+</html>
